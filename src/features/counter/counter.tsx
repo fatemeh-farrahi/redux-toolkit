@@ -1,7 +1,7 @@
 import { useAppSelector, useAppDispatch } from '../../types/hooks'
 import { increment, decrement, incrementByAmount } from './counterSlice'
 
-export function Counter() {
+export const Counter=()=> {
   const count = useAppSelector((state) => state.counter.value)
   const dispatch = useAppDispatch()
 
